@@ -1,0 +1,185 @@
+html *{
+  -webkit-font-smoothing: antialiased;
+}
+body{
+  line-height: 1.5em !important;
+}
+.title h3{
+  font-size: 25px !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 1.4em !important;
+  font-weight: 300;
+}
+
+/* inputs */
+
+.container .bmd-form-group .bmd-label-static {
+  top: .35rem;
+  left: 0;
+  font-size: .875rem;
+}
+
+.container .bmd-form-group .form-control, .bmd-form-group input::placeholder, .bmd-form-group label {
+  line-height: 1.1;
+}
+
+.container .form-control, .is-focused .form-control {
+  background-image: linear-gradient(0deg,#9c27b0 2px,
+  rgba(156,39,176,0) 0),linear-gradient(0deg,#d2d2d2 1px,hsla(0,0%,82%,0) 0) !important;
+}
+
+.form-group.is-focused [class*=" bmd-label"], .form-group.is-focused [class^=bmd-label] {
+  color: #9c27b0;
+}
+.form-control {
+  background: no-repeat bottom,50% calc(100% - 1px);
+  background-size: 0 100%,100% 100%;
+  border: 0;
+  height: 36px;
+  transition: background 0s ease-out;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  font-size: 14px !important;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.form-control::placeholder{
+  font-size: 14px !important;
+  color: #AAA !important;
+}
+
+.bmd-form-group label {
+  font-size: .875rem !important;
+  color: #AAA;
+}
+
+.bmd-form-group [class^=bmd-label].bmd-label-floating {
+  will-change: left,top,contents;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.bmd-form-group .bmd-label-floating, .bmd-form-group .bmd-label-placeholder {
+  top: 2.3125rem !important;
+}
+
+.is-focused .bmd-label-floating {
+  top: 1rem;
+  left: 0;
+  font-size: .6875rem;
+}
+
+.is-filled .bmd-label-floating, .is-focused .bmd-label-floating {
+  top: 1rem !important;
+  left: 0;
+  font-size: .6875rem !important;
+}
+
+
+.has-success .form-control-feedback {
+  color: #4caf50 !important;
+  opacity: 1;
+}
+
+.has-danger .form-control-feedback {
+  color: #f44336;
+  opacity: 1;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: 33px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.has-success .form-control, .is-focused .has-success .form-control {
+  background-image: linear-gradient(to top,#4caf50 2px,rgba(76,175,80,0) 2px),linear-gradient(to top,#d2d2d2 1px,rgba(210,210,210,0) 1px) !important;
+}
+
+.has-danger .form-control, .has-danger .form-control:invalid, .is-focused .has-danger .form-control {
+  background-image: linear-gradient(to top,#f44336 2px,rgba(244,67,54,0) 2px),linear-gradient(to top,#d2d2d2 1px,rgba(210,210,210,0) 1px) !important;
+}
+
+.input-group .input-group-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  background-color: transparent;
+  border-color: transparent;
+}
+/* footer */
+
+/* footer{
+  margin-top: 20px;
+  color: #555;
+  background: #fff;
+  padding: 25px;
+  font-weight: 300;
+  
+} */
+/* .footer p{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+footer p a{
+  color: #555;
+  font-weight: 400;
+}
+
+footer p a:hover {
+  color: #9f26aa;
+  text-decoration: none;
+} */
+
+
+/* startin here we go */
+
+
+/* button1 for submit css */
+.neu-button {
+  background-color: #128C7E;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #128C7E, inset -4px -4px 10px #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 8px 25px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgb(42, 177, 91);
+}
+
+.neu-button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.neu-button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+.button1{
+  margin-top: 5px;
+}
+
+
+
+
+/* navbar */
+.navbar{
+  background-color:#128C7E ;
+}
+#h5{
+  color: white;
+}
