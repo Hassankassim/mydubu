@@ -15,7 +15,7 @@ function App() {
       try{
         setLoading(true);
         const {data} = await backendAPI.post(
-          '/api/v1', {name, phone}
+        '', {name, phone}
         )
         if(data.success){
           console.log(`${data.name} is saved`)
