@@ -59,7 +59,7 @@ function App() {
       {/* Main content */}
       <div className='container mt-5'>
         <div className='title'>
-          <h3>TheBucket</h3>
+          <h3>SavesBucket</h3>
         </div>
         <div className='m-3 text-success'>
           {data && <h5>{data}</h5>}
