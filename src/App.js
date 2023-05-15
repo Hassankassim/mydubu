@@ -4,6 +4,7 @@ import 'bootstrap-material-design/dist/css/bootstrap-material-design.min.css';
 import './styles.css';
 import dubulogo from './img/dubu icon.png'
 import backendAPI from './api/backendAPI';
+
 function App() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
@@ -69,7 +70,7 @@ function App() {
         <form className='form form-row' onSubmit={handleSubmit}>
           <div className='row'>
             <div className='col-lg-6 col-sm-6'>
-              <div className='form-group has-default bmd-form-group'>
+              <div className='form-group has-default bmd-form-group '>
                 <input
                   type='text'
                   name='name'
@@ -82,15 +83,17 @@ function App() {
             <div className='col-lg-6 col-sm-6'>
               <div className='form-group bmd-form-group'>
                 <label htmlFor='exampleInput1' className='bmd-label-floating'>
-                  Phone Number
+        
                 </label>
+                
                 <input
                   type='text'
                   name='phone'
                   className='form-control'
                   id='exampleInput1'
+                  placeholder='Phone Number'
                 />
-                <span className='bmd-help'>+255.....</span>
+               
               </div>
               <div className='button1'>
                 <button type='submit' className='neu-button'>
