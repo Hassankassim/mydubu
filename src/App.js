@@ -4,6 +4,8 @@ import 'bootstrap-material-design/dist/css/bootstrap-material-design.min.css';
 import './styles.css';
 import dubulogo from './img/dubu icon.png'
 import backendAPI from './api/backendAPI';
+import savesbucket from './img/savesbucket.png'
+
 
 function App() {
   const [loading, setLoading] = React.useState(false);
@@ -60,6 +62,11 @@ function App() {
       <div className='container mt-5'>
         <div className='title'>
           <h3>SavesBucket</h3>
+          
+          <div className="image-container1">
+      <img width={'120px'} src={savesbucket} alt="Description of the image" />
+    </div>
+
         </div>
         <div className='m-3 text-success'>
           {data && <h5>{data}</h5>}
