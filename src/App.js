@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-material-design/dist/css/bootstrap-material-design.min.css";
 import "./styles.css";
-import dubulogo from "./img/dubu icon.png";
+import dubulogo from "./Assets/img/dubu icon.png";
 import backendAPI from "./api/backendAPI";
-import savesbucket from "./img/savesbucket.png";
+import savesbucket from "./Assets/img/savesbucket.png";
 
 function App() {
   const [loading, setLoading] = React.useState(false);
