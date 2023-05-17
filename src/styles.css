@@ -216,4 +216,13 @@ h3{
   text-align: center;
 }
 
+#downloadbtn{
+  background-color: #273443;
+  padding-left: 106px;
+  padding-right: 100px;
+  border-radius: 4px;
+}
+.pa1{
+  text-align: center;
 
+}
