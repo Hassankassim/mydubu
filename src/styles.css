@@ -218,11 +218,15 @@ h3{
 
 #downloadbtn{
   background-color: #273443;
-  padding-left: 106px;
+  padding-left: 100px;
   padding-right: 100px;
   border-radius: 4px;
+  color:red;
+
 }
 .pa1{
   text-align: center;
+  color: #4caf50;
+  text-decoration: solid;
 
 }
