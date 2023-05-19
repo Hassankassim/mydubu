@@ -1,14 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-material-design/dist/css/bootstrap-material-design.min.css";
-import "../../styles.css";
+
 import dubulogo from "../../Assets/img/dubu icon.png";
 import backendAPI from "../../api/backendAPI";
 import savesbucket from "../../Assets/img/savesbucket.png";
-import icon1 from "../../Assets/img/icons8-congratulation-94.png"
 
 
-function Download() {
+
+function Home() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
   const handleSubmit = (e) => {
@@ -43,7 +41,6 @@ function Download() {
       <div className="container mt-5">
         <div className="title">
           <h3>SavesBucket</h3>
-          <p className="pa1">Congratulation For Using Our DubuBucket! <span><img width="52px" src={icon1} alt="" /></span> </p>
 
           <div className="image-container1">
             <img
@@ -57,21 +54,48 @@ function Download() {
         <div className="m-3 text-warning">
           {loading && <h5 className="h5">Saving....</h5>}
         </div>
+        <form className="form form-row" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-lg-6 col-sm-6">
+              <div className="form-group has-default bmd-form-group ">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-sm-6">
+              <div className="form-group bmd-form-group">
+                <label
+                  htmlFor="exampleInput1"
+                  className="bmd-label-floating"
+                ></label>
+
+                <input
+                  type="text"
+                  name="phone"
+                  className="form-control"
+                  id="exampleInput1"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div className="button1">
+                <button type="submit" className="neu-button">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-      <div className="container">
-      <div className="row">
-      <div className="col-6" >
-        <button
-          id="downloadbtn"
-          className="btn btn-primary"
-          onClick={handleDownloadVcard}
-        >
+      {/* <div className="container">
+        <button className="btn btn-primary" onClick={handleDownloadVcard}>
           Download Vcard
         </button>
-        </div>
-      </div>
-        <p className="pa1">Enjoy It!</p>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <div className="futa" style={{ height: "430px" }}></div>
@@ -79,4 +103,4 @@ function Download() {
   );
 }
 
-export default Download;
+export default Home;
