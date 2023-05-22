@@ -1,12 +1,10 @@
 import React from "react";
 
-import dubulogo from "../../Assets/img/dubu icon.png";
 import backendAPI from "../../api/backendAPI";
 import savesbucket from "../../Assets/img/savesbucket.png";
-
-
-
+import '../../components/UI/button/button.css'
 function Home() {
+  
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
   const handleSubmit = (e) => {
@@ -35,12 +33,10 @@ function Home() {
 
   return (
     <>
-     
-
       {/* Main content */}
       <div className="container mt-5">
         <div className="title">
-          <h3>SavesBucket</h3>
+         
 
           <div className="image-container1">
             <img
@@ -52,7 +48,16 @@ function Home() {
         </div>
         <div className="m-3 text-success">{data && <h5>{data}</h5>}</div>
         <div className="m-3 text-warning">
-          {loading && <h5 className="h5">Saving....</h5>}
+          {loading && <div id="page">
+        <div id="container">
+            <div id="ring"></div>
+            <div id="ring"></div>
+           
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="h3">Saving..!</div>
+        </div>
+</div>}
         </div>
         <form className="form form-row" onSubmit={handleSubmit}>
           <div className="row">
@@ -69,11 +74,6 @@ function Home() {
 
             <div className="col-lg-6 col-sm-6">
               <div className="form-group bmd-form-group">
-                <label
-                  htmlFor="exampleInput1"
-                  className="bmd-label-floating"
-                ></label>
-
                 <input
                   type="text"
                   name="phone"
@@ -83,7 +83,7 @@ function Home() {
                 />
               </div>
               <div className="button1">
-                <button type="submit" className="neu-button">
+                <button type="submit" className="explorebtn2">
                   Save
                 </button>
               </div>

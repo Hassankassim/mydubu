@@ -5,6 +5,7 @@ import "../../styles.css";
 import dubulogo from "../../Assets/img/dubu icon.png";
 import backendAPI from "../../api/backendAPI";
 import savesbucket from "../../Assets/img/savesbucket.png";
+import downloadbtn1 from "../../Assets/img/icons8-download-64.png";
 import icon1 from "../../Assets/img/icons8-congratulation-94.png"
 
 
@@ -60,14 +61,21 @@ function Download() {
       </div>
       <div className="container">
       <div className="row">
-      <div className="col-6" >
-        <button
-          id="downloadbtn"
+      <div className="c" >
+       <div id="downloadbtn2" > <button id="downloadbtn"
+        
           className="btn btn-primary"
           onClick={handleDownloadVcard}
         >
-          Download Vcard
+            <img
+            className="ico1"
+              width={"30px"}
+              src={downloadbtn1}
+              alt="Description of the image"
+            />
+           Download Vcard
         </button>
+        </div>
         </div>
       </div>
         <p className="pa1">Enjoy It!</p>

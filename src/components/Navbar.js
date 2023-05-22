@@ -1,5 +1,5 @@
 import React from 'react'
-import dubulogo from "../Assets/img/dubu icon.png";
+import dubulogo from "../Assets/img/dubu icon1.png";
 
 
 function Navbar() {
@@ -14,9 +14,9 @@ function Navbar() {
             </span>
           </a>
 
-          <a id="h5" href="/explore">
+          <a id="h5" href="/landing">
             
-          <h5>Explore</h5>
+         <button className='explorebtn' >Explore</button>
           </a>
         </div>
       </nav>
