@@ -15,7 +15,7 @@ function Landing() {
       {" "}  
       <div className="container6">
         <div className="card">
-          <div className="image">
+          <div className="">
             <img
               className="image"
               src={image1}
@@ -28,7 +28,7 @@ function Landing() {
                 Connect with Ease. Save with Confidence. Dubu Has You Covered
               </span>
             </a>
-
+         
             <p className="desc">
               Dubu simplifies contact management by providing a user-friendly
               platform for easy saving, organization, and sharing of contacts
@@ -36,10 +36,10 @@ function Landing() {
               prioritizing privacy and security.
             </p>
 
-            <a href="\Explore" className="explorebtn">
-              Find out more
+          <div className="container6">  <a href="\Explore" className="explorebtn">
+              Get Started
               <span aria-hidden="true">→</span>
-            </a>
+            </a></div>
           </div>
         </div>
       </div>

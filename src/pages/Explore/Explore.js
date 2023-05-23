@@ -27,7 +27,7 @@ function Explore() {
           />
         </div>
       </div>
-      <h5>Simple to use</h5>
+      
       <div className="container3">
         <strong>1st Step:</strong> Write Your Name and Number Then Click Save
         <strong>2nd Step:</strong> Wait for Download link When The Bucket is Full
@@ -41,7 +41,7 @@ function Explore() {
           <div >
             <br />
             <br />
-            <h3>ABOUT US</h3>
+           <h5><strong>ABOUT US</strong></h5>
             <div ClassName="container6">
               At Dubu, we are passionate about simplifying contact management
               and enhancing social networking experiences. Our mission is to
