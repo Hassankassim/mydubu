@@ -7,6 +7,8 @@ import Explore from './pages/Explore/Explore'
 import Navbar from './components/Navbar'
 import Landing from './pages/landing/landing'
 import Footer from './components/UI/button/Footer'
+import Registration from './pages/Registration/Registration'
+import Login from './pages/Registration/Login'
 
 
 
@@ -20,6 +22,8 @@ const WebsiteRouter = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/download' element={<Download/>}/>
             <Route path='/landing' element={<Landing/>}/>
+            <Route path='/Registration' element={<Registration/>}/>
+            <Route path='/Login' element={<Login/>}/>
         </Routes>
         <Footer/>
     </Router>

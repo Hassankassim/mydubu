@@ -1,6 +1,7 @@
 
 
 
+import { ButtonToolbar } from "react-bootstrap";
 import image1 from "../../Assets/img/save1.png";
 import image2 from "../../Assets/img/savepc.png";
 
@@ -39,6 +40,7 @@ function Explore() {
      
        
           <div >
+          <a href="/Registration" > <div className="container6"> <button className="submit2">Register</button></div></a>
             <br />
             <br />
            <h5><strong>ABOUT US</strong></h5>

@@ -36,9 +36,9 @@ function Landing() {
               prioritizing privacy and security.
             </p>
 
-          <div className="container6">  <a href="\Explore" className="explorebtn">
-              Get Started
-              <span aria-hidden="true">→</span>
+          <div className="container6">  <a href="\Explore" >
+             <button className="submit2"> Get Started</button>
+             
             </a></div>
           </div>
         </div>
