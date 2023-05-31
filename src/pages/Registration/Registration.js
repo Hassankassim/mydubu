@@ -3,7 +3,7 @@ import './Registration.css'
 
 const Registration = () => {
   return (
-   <div className='container6'> <form className="form2">
+   <div className='container10'> <form className="form2">
    <p className="title2">Register</p>
    <p className="message">Signup now and get full access to our app.</p>
    <div className="flex">
