@@ -2,11 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-material-design/dist/css/bootstrap-material-design.min.css";
 import "../../styles.css";
-import dubulogo from "../../Assets/img/dubu icon.png";
+
 import backendAPI from "../../api/backendAPI";
-import savesbucket from "../../Assets/img/savesbucket.png";
+
 import downloadbtn1 from "../../Assets/img/icons8-download-64.png";
-import icon1 from "../../Assets/img/icons8-congratulation-94.png"
+
 
 
 function Download() {
@@ -44,12 +44,12 @@ function Download() {
       <div className="container mt-5">
         <div className="title">
           <h3>SavesBucket</h3>
-          <p className="pa1">Congratulation For Using Our DubuBucket! <span><img width="52px" src={icon1} alt="" /></span> </p>
+    
 
           <div className="image-container1">
             <img
               width={"120px"}
-              src={savesbucket}
+            
               alt="Description of the image"
             />
           </div>

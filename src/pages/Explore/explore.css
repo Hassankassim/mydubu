@@ -1,0 +1,28 @@
+.container67 {
+  justify-content: center;
+  background-color: #111827;
+  color: #ffffff;
+  padding-bottom: 10%;
+}
+h5 {
+  color: #ffffff;
+}
+
+#cardshadow{
+height: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 19px 20px;
+  border-radius: 10px;
+  background: linear-gradient(315deg, #29963f, #227e35);
+  box-shadow:  -16px -16px 32px #20773151,
+               16px 16px 32px #2ca14357;
+}
+#container612{
+ margin: 25px;
+
+text-align: justify;
+
+
+
+}

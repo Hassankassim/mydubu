@@ -2,7 +2,7 @@ import React from 'react';
 import './login.css'
 const Login = () => {
   return (
-    <div className="container6">
+    <div className="container8">
       <div className="card4">
         <a className="login">Log in</a>
         <div className="inputBox">
@@ -15,8 +15,9 @@ const Login = () => {
           <span>Password</span>
         </div>
 
-        <button className="enter">Enter</button>
-      </div>
+        <button  className="enter">Enter</button>
+       <a href='/Dashboard' > <p>You forgot password!?</p></a>
+     </div>
     </div>
   );
 };

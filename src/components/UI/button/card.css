@@ -1,62 +1,74 @@
-.imgcard{
- width: 70%;
- margin: 21px;
+.imgcard {
+  width: 60%;
+  margin: 12px;
 }
+.explorebtn12 {
+  border: 2px solid #37fa5e;
+  margin-left: 50%;
+  height: 20%px;
+  width: 105px;
+  position: absolute;
+  color: #ffffff;
+  border-radius: 0.9em;
+  padding-left: 12px;
+  background: #009972;
+  margin-bottom: 10px;
+}
+
 .card1 {
-    height: 134px;
-    width: 100px;
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    border-radius: 16px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
-    overflow: hidden;
-    margin: 40px;
+  height: 80px;
+  width: 93%;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  box-shadow: 0 0 20px 8px #d0d0d01e;
+  background-color: #00325e;
+  margin: 20px;
+}
 
-  }
-  
-   /*Image*/
-  .card1-image {
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background: #212121;
-  
-    background: linear-gradient(to top, #14e863, #14e863);
-  }
-  
-  /*Description */
-  .card1-description {
-    display: flex;
-    position: absolute;
-    gap: .5em;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    color: #212121;
-    height: 60%;
-    bottom: 0;
-    border-radius: 16px;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 1rem;
-  }
-  
-  /*Text*/
-  .text-title {
-    font-size: 1.1rem;
-    font-weight: 200;
-  }
-  
-  .text-body {
-    font-size: 0.8rem;
-    line-height: 130%;
-   
 
-  }
-  
-  
-  /* Hover states */
-  .card1:hover .card1-description {
-    transform: translateY(100%);
-  }
-  
-  
+/*Image*/
+.card1-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 2%;
+  background: #009972;
+}
+/*Description */
+.card1-description {
+margin-bottom: 40%;
+  margin-left: 25%;
+  font-size: 1.5rem;
+  gap: 0.5em;
+  flex-direction: column;
+  color: #ffffff;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+/*De
+
+/*Text*/
+.text-title1 {
+  font-size: 1rem;
+  color: #aeadad;
+  align-items: center;
+position: absolute;
+}
+
+.text-body1 {
+  position: relative;
+  line-height: 130%;
+  color: #ffffff;
+  font-size: 0.6em;
+}
+
+.text-body1b {
+  position: relative;
+  line-height: 130%;
+  color: #ffffff;
+  font-size: 0.6em;
+}
+
+/* Hover states */

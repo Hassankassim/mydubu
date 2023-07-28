@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <section id="footer">
-      <div className="container">
+      <div className="">
         <div className="row text-center text-xs-center text-sm-left text-md-left">
           {/* Content within the row */}
         </div>

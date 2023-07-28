@@ -62,9 +62,7 @@
     box-shadow: 6px 6px 12px #4f917289,
                 -6px -6px 12px #62ed9e50;
   }
-  .explorebtn2 {
-    
-   }
+ 
    
    .explorebtn2:active {
     color: #666;
@@ -72,3 +70,5 @@
                 inset -4px -4px 12px #ffffff;
    }
   
+
+   

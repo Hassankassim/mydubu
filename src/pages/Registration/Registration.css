@@ -1,4 +1,7 @@
+
 .form2 {
+  margin-top: 50px;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -10,11 +13,10 @@
   }
   
 .container10{
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 200px;
+  margin: 0px 0px 0px 0px;
 }
 
   .title2 {
@@ -68,7 +70,7 @@
   }
   
   .flex {
-    display: flex;
+  
     width: 100%;
     gap: 6px;
   }
@@ -111,9 +113,9 @@
   }
   
   .submit2 {
-    border: none;
+    border-color:  #0cf01b;
     outline: none;
-    background-color: #273443;
+    background-color: #0a3d05;
     padding: 10px;
     border-radius: 10px;
     color: #fff;

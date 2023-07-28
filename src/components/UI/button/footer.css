@@ -3,6 +3,18 @@
 section {
     padding: 2px 0;
 }
+.accbtn{
+    margin: 50px 0px 0px 0px;
+    justify-content: center;
+    display: flex;
+}
+.learn{
+   
+    margin: 70px 5% 80% 5%;
+}
+#accordheader{
+    background-color: rgb(20, 221, 13);
+}
 
 section .section-title {
     text-align: center;
@@ -11,9 +23,15 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-   
+margin-top: 0;
+    bottom: 10;
+    left: 0;
+    width: 100%;
+  
+  
     background: -webkit-linear-gradient(to right, #273443, #273443);
-    background: linear-gradient(to right, #273443, #35804c);
+    background: linear-gradient(to right, #7700ff , #00325e);
+
 }
 #footer h5{
 	padding-left: 10px;
