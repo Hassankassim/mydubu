@@ -1,5 +1,6 @@
 import React from 'react';
 import './bucket.css'
+import plusicon from '../../../Assets/img/plus.png'
 const Bucket = ({name ,title,linki,}) => {
   return (
     <div className="cardb wallet">
@@ -77,7 +78,7 @@ const Bucket = ({name ,title,linki,}) => {
       </div>
       <p>{title}</p>
 
-        <a href={linki}><button className='btnb btn bg-primary'>click</button></a></div>
+        <a href={linki}><button className='btnb btn bg-primary'>  <img src={plusicon} width={'20px'} />join</button></a></div>
   
   );
 };

@@ -1,148 +1,119 @@
-
-.card6{
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-
-
+.card6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cardnew1{
+.cardnew1 {
   margin-top: 130px;
 }
-.background1{
+.background1 {
   color: #ffffff;
   background-color: #ebeff7;
   padding-bottom: 100px;
   margin-bottom: 0;
   position: relative;
- 
-
-
-
-
-
 }
-.container61{
+.container61 {
   align-items: center;
   justify-content: center;
   display: flex;
   position: relative;
   color: #ffffff;
   margin-top: 0;
-
-
 }
 
-.container62{
-color: white;
-display: flex;
-width: 100px;
-height: 100px;
-background-color:#00325e ;
-
-border-radius: 100%;
-border: 17px solid #ebeff7;
-display: flex;
-justify-content: center;
-align-items: center;
-
-position: absolute;
-top: 50%;
-right: 50%;
-transform: translate(50%, -50%);
-
-
-
-
-
+.container62 {
+  color: white;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #00325e;
+  border-radius: 100%;
+  border: 17px solid #ebeff7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
-
-
 
 .card5 {
   border: none;
- margin-top: 0;
-    border-radius: 0 0 50px 50px;
-    background-color: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    border: 10.px solid transparent;
-    align-items: center;
-    justify-content: center;
-  background: linear-gradient(to right, #7700ff , #00325e);
+  margin-top: 0;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #7700ff, #00325e);
+}
 
- 
-  }
-  
-  .content {
-    color: white;
-    align-items: center;
-    justify-content: center;
-    padding: 1.1rem;
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  .image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
-    border-radius: 6px;
-  }
-  .explorebtn3{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-    border-radius: 5px;
-    border: 2px solid #5ada3a;
-    color: #ffffff;
-    background-color: #00325e;
-  }
-  .title1 {
-    color: #ffffff;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-   
-  }
-  
-  .desc {
+.content {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem;
+  text-align: center;
+  margin-top: 0;
+}
 
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    text-align: center;
-    margin-bottom: 40px ;
-  }
-  
-  .action {
-    display: inline-flex;
-    margin-top: 1rem;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    align-items: center;
-    gap: 0.25rem;
-    background-color: #2563EB;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  
-  .action span {
-    transition: .3s ease;
-  }
-  
-  .action:hover span {
-    transform: translateX(4px);
-  }
-  #h6{
-    margin-top: 9px;
-    text-align: center;
-  }
-  
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.explorebtn3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 5px;
+  border: 2px solid #5ada3a;
+  color: #ffffff;
+  background-color: #00325e;
+}
+.title1 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.desc {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: 0.3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+#h6 {
+  margin-top: 9px;
+  text-align: center;
+}

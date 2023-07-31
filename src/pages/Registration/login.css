@@ -23,12 +23,12 @@
     width: 80%;
     flex-direction: column;
     gap: 35px;
-    background: -webkit-linear-gradient(to right, #273443a9, #2734438b);
-    background: linear-gradient(to right, #3a4d63bd, #35804cb0);
-    box-shadow: 16px 16px 32px #c8c8c8,
+    background: -webkit-linear-gradient(to right, #273443, #273443);
+    background: linear-gradient(to right, #7700ff79 , #00325e8c);
+box-shadow: 16px 16px 32px #c8c8c8,
           -16px -16px 32px #fefefe;
     border-radius: 8px;
-   margin-bottom: 90px;
+   margin-bottom: 70%;
   }
   
   .inputBox {
