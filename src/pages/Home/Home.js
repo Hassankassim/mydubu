@@ -36,7 +36,7 @@ function Home() {
         <div className="container mt-5">
           <div className="title">
             <div className="image-container1">
-              <h2>Name of the group</h2>
+              <h2>NM-AIST PT MEMBER</h2>
             </div>
           </div>
           <div className="feedback1">

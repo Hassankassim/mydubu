@@ -13,7 +13,8 @@ function OffcanvasExample() {
   };
 
   return (
-    <Navbar  expand="lg" className=" navbar mb-0">
+    <div className='row'>
+    <Navbar  expand="lg" className=" navbar mb-0 col-12">
       <Container fluid>
         <Navbar.Brand href="/landing">
           <span>
@@ -42,6 +43,7 @@ function OffcanvasExample() {
         </Offcanvas>
       </Container>
     </Navbar>
+    </div>
   );
 }
 

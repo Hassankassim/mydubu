@@ -1,11 +1,9 @@
-.btnb{
-position: relative;
+.btnb {
+  position: relative;
 }
 
 #joingbucket {
   align-items: center;
- 
-
 }
 .wallet {
   --bg-color: #ceb2fc;
@@ -13,17 +11,16 @@ position: relative;
   --text-color-hover: #fff;
   --box-shadow-color: rgba(206, 178, 252, 0.48);
 }
-.containerb{
+.containerb {
   justify-content: center;
   display: flex;
-  
+
 }
 .cardb {
   align-items: center;
-  display: flex;
-margin: 7px;
-  width: 200px;
-  height: 300px;
+margin: 10px;
+  width: 150px;
+  height: 250px;
   background: #fff;
   border-top-right-radius: 10px;
   overflow: hidden;
@@ -69,8 +66,8 @@ margin: 7px;
 }
 
 .circle {
-  width: 122px;
-  height: 122px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid var(--bg-color);
@@ -84,8 +81,8 @@ margin: 7px;
 
 .circle:after {
   content: "";
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: block;
   position: absolute;
   background: var(--bg-color);
@@ -101,9 +98,9 @@ margin: 7px;
 }
 
 .overlay {
-  width: 100px;
+  width: 70px;
   position: absolute;
-  height: 100px;
+  height: 70px;
   border-radius: 50%;
   background: var(--bg-color);
   top: 70px;

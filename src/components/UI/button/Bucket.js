@@ -1,20 +1,23 @@
 import React from 'react';
 import './bucket.css'
+import svg1 from '../../../Assets/img/undraw business.png'
 import plusicon from '../../../Assets/img/plus.png'
-const Bucket = ({name ,title,linki,}) => {
+const Bucket = ({name ,title,linki,svglink}) => {
   return (
+    <>
     <div className="cardb wallet">
       <h6>{name}</h6>
+      
       <div className="overlay"></div>
       <div className="circle">
         <svg
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          viewBox="23 29 78 60"
-          height="60px"
-          width="78px"
+         
+         
+          height="100px"
+          width="780px"
+          src={svg1}
         >
+        <img className='circle'  width={"12px"} ></img>
           <defs></defs>
           <g
             transform="translate(23.000000, 29.500000)"
@@ -78,8 +81,8 @@ const Bucket = ({name ,title,linki,}) => {
       </div>
       <p>{title}</p>
 
-        <a href={linki}><button className='btnb btn bg-primary'>  <img src={plusicon} width={'20px'} />join</button></a></div>
-  
+        <a href={linki}><button className='btnb btn bg-primary'>  <img src={plusicon} width={'15px'} />join</button></a></div>
+        </>
   );
 };
 
