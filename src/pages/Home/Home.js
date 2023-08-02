@@ -15,7 +15,7 @@ function Home() {
         const { data } = await backendAPI.post("", { name, phone });
         if (data.success) {
           console.log(`${data.name} is Saved. Done!`);
-          setData(`${data.name} is Saved. Done! `);
+          setData(<span className="blue-text">{`${data.name} is Saved. Done!`}</span>);
         }
       } catch (err) {
         console.log(err);
