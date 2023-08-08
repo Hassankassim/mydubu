@@ -5,7 +5,7 @@ import smsImg from '../../Assets/img/whatsapp.png'
 import notificationImg from '../../Assets/img/whatsapp.png'
 import logoImg from '../../Assets/img/whatsapp.png'
 import dashboardImg from '../../Assets/img/whatsapp.png'
-// Import images as React components
+
 
 
 

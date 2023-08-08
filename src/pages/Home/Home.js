@@ -5,6 +5,7 @@ import { Navbar } from "react-bootstrap";
 function Home() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -36,7 +37,7 @@ function Home() {
         <div className="container mt-5">
           <div className="title">
             <div className="image-container1">
-              <h2>CONTACTS BUCKET</h2>
+              <h2 className="ChangedName">CONTACTS BUCKET</h2>
             </div>
           </div>
           <div className="feedback1">

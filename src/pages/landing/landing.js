@@ -53,10 +53,10 @@ function Landing() {
         <div className="">
           <Card1
             className="image"
-            name="Jiunge kwenye community zetu"
+            name="tafuta number"
             image={cardimage2}
-            title="Unufaike zaidi nasi"
-            button="Join"
+            title="makampuni mbalimbali"
+            button="search"
             linki="/explore"
           />
         </div>

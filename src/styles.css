@@ -5,11 +5,11 @@ html *{
   color: blue;
 }
 .thebody{
-  width: 100%;
-  height: 100vh;
+
   margin:0 auto;
   padding: 0;
- max-width:100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .feedback1{
@@ -227,17 +227,19 @@ footer p a:hover {
 /* navbar */
 #icondubu{
   width: 55px;
-  position: absolute;
+  border: none;
+
 }
 .togglebtn{
+  margin-right: 8px;
   margin-top: 0;
-  position: absolute;
+border: none;
+shape-outside: none;
   
 }
 .navbar{
   background-color:#128C7E ;
   background: linear-gradient(to right, #7700ff , #00325e);
-
   border: none;
   margin: 0;
   box-shadow: none;

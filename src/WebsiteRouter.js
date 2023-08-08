@@ -8,12 +8,13 @@ import Landing from "./pages/landing/landing";
 import Footer from "./components/UI/button/Footer";
 import Registration from "./pages/Registration/Registration";
 import Login from "./pages/Registration/Login";
-import Dashboard from "./User/dashboard/Dashboard";
+
 import Navbar from "./components/Navbar";
 import Learnmore from "./components/UI/button/Learnmore";
 import Createacc from "./pages/Explore/Createacc";
 import Bucket from "./components/UI/button/Bucket";
 import Joiningbucket from "./components/UI/button/joinbucket";
+import ChangeName from "./pages/ChangeName/ChangeName";
 const WebsiteRouter = () => {
   return (
     <Router>
@@ -27,9 +28,10 @@ const WebsiteRouter = () => {
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Bucket" element={<Bucket />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        
         <Route path="/Createacc" element={<Createacc />} />
         <Route path="/Joiningbucket" element={<Joiningbucket />} />
+        <Route path="/ChangeName" element={<ChangeName />} />
       </Routes>
       <Footer />
     </Router>
