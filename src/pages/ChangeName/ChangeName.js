@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../ChangeName/ChangeName.css';
-
+import Navbar from '../../components/Navbar'
 const ChangeName = ({ setName, setChangedClassName }) => {
   const [nameInput, setNameInput] = useState('');
 
@@ -19,6 +19,8 @@ const ChangeName = ({ setName, setChangedClassName }) => {
   };
 
   return (
+    <div>
+      <Navbar />
     <div className='allform2'>
       <div className="form-container">
         <div className="logo-container">
@@ -47,6 +49,7 @@ const ChangeName = ({ setName, setChangedClassName }) => {
           <a href="#" className="signup-link link">Sign up now</a>
         </p>
       </div>
+    </div>
     </div>
   );
 };

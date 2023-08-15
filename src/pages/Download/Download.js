@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-material-design/dist/css/bootstrap-material-design.min.css";
 import "../../styles.css";
-
+import Navbar from '../../components/Navbar'
 import backendAPI from "../../api/backendAPI";
 
 import downloadbtn1 from "../../Assets/img/icons8-download-64.png";
@@ -38,7 +38,7 @@ function Download() {
 
   return (
     <>
-     
+     <Navbar />
 
       {/* Main content */}
       <div className="container mt-5">

@@ -1,14 +1,4 @@
-.cardacc {
-   
-    justify-content: center;
-margin: 10% 10px 70% 10px;
-    border-width: 1px;
-    border-color: rgba(219, 234, 254, 1);
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 1rem;
-  }
-  
+
   .headeracc {
     display: flex;
     align-items: center;
@@ -34,12 +24,12 @@ margin: 10% 10px 70% 10px;
   
   .alert {
     font-weight: 600;
-    color: rgba(107, 114, 128, 1);
+    color: rgba(44, 10, 113, 0.774);
   }
   
   .message {
     margin-top: 1rem;
-    color: rgba(107, 114, 128, 1);
+    color: rgb(232, 8, 45);
   }
   
   .actions {
@@ -64,9 +54,17 @@ margin: 10% 10px 70% 10px;
   .read {
    
     background-color: rgba(4, 15, 116, 0.95);
-    color: rgba(255, 255, 255, 1);
+   color: #fff;
     border: 1px solid #7367f4;
   }
+  
+  .read:hover {
+   
+    background-color: rgba(4, 15, 116, 0.95);
+   color: #fff;
+    border: 1px solid #7367f4;
+  }
+
   
   .mark-as-read {
     margin-top: 0.5rem;
@@ -76,5 +74,5 @@ margin: 10% 10px 70% 10px;
   }
   
   .mark-as-read:hover {
-    background-color: rgba(6, 169, 58, 0.393);
+    background-color: rgba(212, 177, 177, 0.877);
   }

@@ -23,11 +23,9 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-margin-top: 10; 
-    
+margin-bottom: 0px;
     width: 100%;
-  
-  
+    position:relative;
     background: -webkit-linear-gradient(to right, #273443, #273443);
     background: linear-gradient(to right, #7700ff , #00325e);
 
@@ -35,8 +33,8 @@ margin-top: 10;
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
+    padding-bottom: 1px;
+    margin-bottom: 0px;
     color:#ffffff;
 }
 #footer a {
@@ -57,7 +55,7 @@ margin-top: 10;
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
-	margin-top:-10px;
+	margin-top:10px;
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{

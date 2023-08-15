@@ -1,7 +1,10 @@
 import Accordion from "react-bootstrap/Accordion";
 import "./footer.css";
+import Navbar from '../../Navbar'
 function Learnmore() {
   return (
+    <>
+    <Navbar />
     <div className="learn">
       <Accordion defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
@@ -37,6 +40,7 @@ function Learnmore() {
         <button className="explorebtn2"> about us</button>
       </div>
     </div>
+    </>
   );
 }
 

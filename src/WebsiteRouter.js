@@ -5,20 +5,26 @@ import App from "./App";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
 import Landing from "./pages/landing/landing";
-import Footer from "./components/UI/button/Footer";
+
 import Registration from "./pages/Registration/Registration";
 import Login from "./pages/Registration/Login";
 
-import Navbar from "./components/Navbar";
 import Learnmore from "./components/UI/button/Learnmore";
 import Createacc from "./pages/Explore/Createacc";
 import Bucket from "./components/UI/button/Bucket";
+import Userfooter from "./User/dashboard/Userfooter";
 import Joiningbucket from "./components/UI/button/joinbucket";
 import ChangeName from "./pages/ChangeName/ChangeName";
+import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
+import Profile from "./User/dashboard/Userdashboard/profile";
+import Business from './BUCKETS/Business'
+import NewBucket from "./User/dashboard/newbucket";
+import Uni from './BUCKETS/Uni'
+import Social from './BUCKETS/Social'
+import Student from './BUCKETS/Student'
 const WebsiteRouter = () => {
   return (
     <Router>
-      <Navbar/>
       <Routes>
         <Route path="/explore" element={<Explore />} />
         <Route path="/Learnmore" element={<Learnmore />} />
@@ -28,12 +34,21 @@ const WebsiteRouter = () => {
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Bucket" element={<Bucket />} />
         <Route path="/Login" element={<Login />} />
-        
+
+        <Route path="/Userfooter" element={<Userfooter />} />
+        <Route path="/Userdashboard" element={<Userdashboard />} />
+        <Route path="/Profile" element={<Profile />} />
+
         <Route path="/Createacc" element={<Createacc />} />
         <Route path="/Joiningbucket" element={<Joiningbucket />} />
+
         <Route path="/ChangeName" element={<ChangeName />} />
+        <Route path="/Business" element={<Business />} />
+        <Route path="/Uni" element={<Uni />} />
+        <Route path="/Social" element={<Social />} />
+        <Route path="/Student" element={<Student />} />
+        <Route path="/Newbucket" element={<NewBucket />} />
       </Routes>
-      <Footer />
     </Router>
   );
 };

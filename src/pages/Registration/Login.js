@@ -1,10 +1,16 @@
 import React from 'react';
 import './login.css'
+import Navbar from '../../components/Navbar'
+
+
 const Login = () => {
   return (
+<>
+<Navbar />
+
     <div className="container8">
       <div className="card4">
-        <a className="login">Log in</a>
+        <a href='Login /' className="login">Log in</a>
         <div className="inputBox">
           <input type="text" required="required" />
           <span className="user">Username</span>
@@ -16,9 +22,10 @@ const Login = () => {
         </div>
 
         <button  className="enter">Enter</button>
-       <a href='/Dashboard' > <p>You forgot password!?</p></a>
+       <a href='/Userdashboard' > <p>You forgot password!?</p></a>
      </div>
     </div>
+    </>
   );
 };
 

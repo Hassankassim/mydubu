@@ -1,7 +1,8 @@
 import React from "react";
 import backendAPI from "../../api/backendAPI";
 import "../../components/UI/button/button.css";
-import { Navbar } from "react-bootstrap";
+import Navbar from '../../components/Navbar'
+
 function Home() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
@@ -32,6 +33,7 @@ function Home() {
 
   return (
     <>
+    <Navbar />
       <div className="navcomp">
         {/* Main content */}
         <div className="container mt-5">
@@ -99,8 +101,9 @@ function Home() {
       </div> */}
 
         {/* Footer */}
-        <div className="futa" style={{ height: "430px" }}></div>
+      
       </div>
+    
     </>
   );
 }
