@@ -1,5 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400;1,500&family=Ultra&display=swap');
+
 html *{
   -webkit-font-smoothing: antialiased;
+}
+.black{
+  color: black;
 }
 .blue-text {
   color: blue;
@@ -8,7 +14,6 @@ html *{
 
   margin:0 auto;
   padding: 0;
-	width: 100vw;
 	height: 100vh;
 }
 
@@ -221,7 +226,9 @@ footer p a:hover {
 
 }
 
-
+.white{
+  color: white;
+}
 
 
 /* navbar */
@@ -238,12 +245,13 @@ shape-outside: none;
   
 }
 .navbar{
-  background-color:#128C7E ;
-  background: linear-gradient(to right, #7700ff , #00325e);
+ 
+  background: linear-gradient(to right, #2b00ff , #030024);
   border: none;
   margin: 0;
   box-shadow: none;
   padding-bottom: 18px;
+  width: 100%;
 
  
 }

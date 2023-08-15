@@ -1,10 +1,26 @@
-.container8{
-  display: flex;
+.container8 {
+  padding: 18%;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
   justify-content: center;
-  align-items: center;
-  margin-top: 25%;
-  margin-bottom: 10%;
+  display: flex;
 }
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .login {
     color: #000;
@@ -20,14 +36,13 @@
     justify-content: center;
     align-items: center;
     min-height: 300px;
-    width: 80%;
+    width: 100%;
+  
     flex-direction: column;
     gap: 35px;
-    background: -webkit-linear-gradient(to right, #273443, #273443);
-    background: linear-gradient(to right, #7700ff79 , #00325e8c);
-box-shadow: 16px 16px 32px #c8c8c8,
-          -16px -16px 32px #fefefe;
+    background: transparent; 
     border-radius: 8px;
+ 
    margin-bottom: 70%;
   }
   

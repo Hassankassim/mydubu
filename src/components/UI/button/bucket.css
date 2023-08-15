@@ -1,110 +1,159 @@
-.btnb {
-  position: relative;
-}
 
-#joingbucket {
-  align-items: center;
-}
-.wallet {
-  --bg-color: #ceb2fc;
-  --bg-color-light: #f0e7ff;
-  --text-color-hover: #fff;
-  --box-shadow-color: rgba(206, 178, 252, 0.48);
-}
-.containerb {
-  justify-content: center;
-  display: flex;
 
-}
-.cardb {
-  align-items: center;
-margin: 10px;
-  width: 150px;
-  height: 250px;
-  background: #fff;
-  border-top-right-radius: 10px;
-  overflow: hidden;
+
+.bucket-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease-out;
-  text-decoration: none;
 }
 
-.cardb:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-    0 24px 46px var(--box-shadow-color);
+/* Adjust bucket size */
+.bucket {
+  width: 100px; /* Adjust the width */
+  height: 100px; /* Adjust the height */
+  padding: 10px; /* Adjust padding as needed */
 }
 
-.cardb:hover .overlay {
-  transform: scale(4) translateZ(0);
-}
-
-.cardb:hover .circle {
-  border-color: var(--bg-color-light);
-  background: var(--bg-color);
-}
-
-.cardb:hover .circle:after {
-  background: var(--bg-color-light);
-}
-
-.cardb:hover p {
-  color: var(--text-color-hover);
-}
-
-.cardb p {
-  font-size: 17px;
-  color: #4c5656;
-  margin-top: 30px;
-  z-index: 1000;
-  transition: color 0.3s ease-out;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: #fff;
-  border: 2px solid var(--bg-color);
+.bucket-pair {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 20px; /* Adjust this value for spacing between pairs */
+}
+
+/* Add any additional styling you need for Bucket component */
+
+.card7 {
+margin: 2%;
+  width: 170px;
+  height: 240px;
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 7px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card7:hover {
+  transform: scale(1.05);
+}
+
+.card7 .top-section {
+  height: 90px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
   position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-out;
 }
 
-.circle:after {
+.card7 .top-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.card7 .top-section .border::before {
   content: "";
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.card7 .top-section::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.card7 .top-section .icons {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card7 .top-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.card .top-section .icons .logo .top-section {
+  height: 100%;
+}
+
+.card7 .top-section .icons .social-media {
+  height: 100%;
+  padding: 8px 15px;
+  display: flex;
+  gap: 7px;
+}
+
+.card .top-section .icons .social-media .svg {
+  height: 100%;
+  fill: #1b233d;
+}
+
+.card7 .top-section .icons .social-media .svg:hover {
+  fill: white;
+}
+
+.card .bottom-section {
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+
+.card7 .bottom-section .title3 {
   display: block;
-  position: absolute;
-  background: var(--bg-color);
-  border-radius: 50%;
-  top: 7px;
-  left: 7px;
-  transition: opacity 0.3s ease-out;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
-.circle svg {
-  z-index: 9000;
-  transform: translateZ(0);
+.card .bottom-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.overlay {
-  width: 70px;
-  position: absolute;
-  height: 70px;
-  border-radius: 50%;
-  background: var(--bg-color);
-  top: 70px;
-  left: 50px;
-  z-index: 0;
-  transition: transform 0.3s ease-out;
+.card7 .bottom-section .row .item {
+  flex: 30%;
+  text-align: center;
+  padding: 5px;
+  color: rgba(170, 222, 243, 0.721);
+}
+
+.card .bottom-section .row .item .big-text {
+  font-size: 12px;
+  display: block;
+}
+
+.card7 .bottom-section .row .item .regular-text {
+  font-size: 9px;
+}
+
+.card7.bottom-section .row .item:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.126);
+  border-right: 1px solid rgba(255, 255, 255, 0.126);
 }

@@ -1,47 +1,28 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from "react";
 import Bucket from "./Bucket";
-import businesssvg from '../../../Assets/img/undraw_student.svg'
+import './bucket.css'
+import NavbarExample from "../../Navbar";
+
 function Joinbucket() {
   return (
-    <div className=" containerb">
-      <div id="joingbucket">
-        <h6 className="text-center b-4">Choose a bucket and join</h6>
-        <div className="row">
-          <div className="col-6">
-            <Bucket name="uni-bucket" title="join to the bucket" linki="#" />
-          </div>
-          <div className="col-5">
-            {" "}
-            <Bucket
-              name="socio-bucket"
-              title="join to the bucket"
-              linki="#"
-            />{" "}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6">
-            {" "}
-            <Bucket
-              name="business-bucket"
-              title="join to the bucket"
-              linki="#"
-              svglink="{businesssvg}"
-            />{" "}
-          </div>
-          <div className="col-6">
-            {" "}
-            <Bucket
-              name="student-bucket"
-              title="join to the bucke"
-              linki="#"
-            />{" "}
+    <>
+      <NavbarExample />
+      <div className="container">
+        <div id="joingbucket">
+          <h6 className="text-center b-4">Choose a bucket and join</h6>
+          <div className="bucket-container">
+            <div className="bucket-pair">
+              <Bucket linki="/Business" name="uni-bucket" title="Join to the bucket" linki="#" />
+              <Bucket name="socio-bucket" title="Join to the bucket" linki="#" />
+            </div>
+            <div className="bucket-pair">
+              <Bucket name="business-bucket" title="Join to the bucket" linki="#" svglink="{businesssvg}" />
+              <Bucket name="student-bucket" title="Join to the bucket" linki="#" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,50 +1,48 @@
 import React, { useState } from 'react';
-import { Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-import { useMediaQuery } from 'react-responsive';
-import icondubu from '../Assets/img/icondubu.png';
-import togglebtn from '../Assets/img/navbar toggle.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import logo from '../Assets/img/icondubu.png'
+const NavbarExample = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-function OffcanvasExample() {
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const isLargeScreen = useMediaQuery({ minDeviceWidth: 1500 });
-
-  const toggleOffcanvas = () => {
-    setShowOffcanvas(!showOffcanvas);
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
   };
 
   return (
-    <div className='row'>
-    <Navbar  expand="lg" className=" navbar mb-0 col-12">
-      <Container fluid>
-        <Navbar.Brand href="/landing">
-          <span>
-            <img id="icondubu" src={icondubu} alt="Icon" />
-          </span>
-       
-        </Navbar.Brand>
-        {isLargeScreen ? (
-          <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={toggleOffcanvas} />
-        ) : (
-          <Button   variant="none" onClick={toggleOffcanvas}>
-          <span className='togglebtn' ><img height={"25px"} width={"20px"} src={togglebtn} /></span>
-          </Button>
-        )}
-        <Offcanvas placement="end" show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className=" offcanvas">
-          <Offcanvas.Header className='bgprimary' closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">DuBu</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body >
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className='ul1' href="/landing">Home</Nav.Link>
-              <Nav.Link className='ul1' href="/explore">About</Nav.Link>
-              <Nav.Link className='ul1' href="/explore">Contact</Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Offcanvas>
-      </Container>
-    </Navbar>
-    </div>
-  );
-}
+    <nav className="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="/Landing">
+        <img  width={'62px'} src={logo}></img>
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        onClick={toggleNav}
+        aria-expanded={isNavOpen}
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-export default OffcanvasExample;
+      <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">{/* Add your menu items here */}</ul>
+        <ul className="navbar-nav ">
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i className="fa fa-globe">
+                
+              </i>
+              explore
+            </a>
+          </li>
+        </ul>
+        <form className="form-inline my-2 my-lg-0">
+          <button className="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">
+        Call Us
+          </button>
+        </form>
+      </div>
+    </nav>
+  );
+};
+
+export default NavbarExample;

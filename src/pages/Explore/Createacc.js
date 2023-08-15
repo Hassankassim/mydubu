@@ -1,8 +1,11 @@
 import React from 'react';
 import './Createacc.css'
+import Navbar from '../../components/Navbar'
 const Createacc = () => {
   return (
-    <div className="cardacc">
+    <>
+   
+        <div className="cardacc">
       <div className="headeracc">
         <span className="icon">
           <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -30,6 +33,8 @@ const Createacc = () => {
         </a>
       </div>
     </div>
+    </>
+
   );
 };
 

@@ -1,25 +1,51 @@
-import React from 'react';
-import './login.css'
-const Registration = () => {
-  return (
-    <div className="container8">
-      <div className="card4">
-        <a className="login">Log in</a>
-        <div className="inputBox">
-          <input type="text" required="required" />
-          <span className="user">Username</span>
+import React from "react";
+import "./Registration.css";
+import Navbar from "../../components/Navbar";
+
+class RegistrationForm extends React.Component {
+  render() {
+    return (
+      <>
+        <Navbar />
+        <div className="b1">
+          <form className="formh">
+            <p className="title">Register</p>
+            <p className="message">
+              Signup now and get full access to our app.
+            </p>
+
+            <label>
+              <input required placeholder="" type="text" className="input" />
+              <span>Username</span>
+            </label>
+
+            <label>
+              <input
+                required
+                placeholder=""
+                type="password"
+                className="input"
+              />
+              <span>Password</span>
+            </label>
+            <label>
+              <input
+                required
+                placeholder=""
+                type="password"
+                className="input"
+              />
+              <span>Confirm password</span>
+            </label>
+            <button className="submit">Submit</button>
+            <p className="signin">
+              Already have an account? <a href="/login">Sign in</a>
+            </p>
+          </form>
         </div>
+      </>
+    );
+  }
+}
 
-        <div className="inputBox">
-          <input type="password" required="required" />
-          <span>Password</span>
-        </div>
-
-        <button  className="enter">Enter</button>
-       <a href='/Dashboard' > <p>You forgot password!?</p></a>
-     </div>
-    </div>
-  );
-};
-
-export default Registration;
+export default RegistrationForm;
