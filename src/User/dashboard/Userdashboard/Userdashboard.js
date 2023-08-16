@@ -50,11 +50,7 @@ function Userdashboard() {
               name="Tengeneza Bucket"
               image={cardimage1}
               title="Upate link-share "
-<<<<<<< HEAD
            linki="/Newbucket"
-=======
-           
->>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
 
               
               

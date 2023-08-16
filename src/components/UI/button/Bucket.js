@@ -1,11 +1,7 @@
 import React from 'react';
 import './bucket.css'; // Import the unique CSS file
 
-<<<<<<< HEAD
 const Card = ({name,number,linki2 }) => {
-=======
-const Card = ({name,number,linki }) => {
->>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
   return (
     <div className="card7">
       <div className="top-section">
@@ -42,11 +38,7 @@ const Card = ({name,number,linki }) => {
             <span className="big-text">100%</span>
             <span className="regular-text">active</span>
           </div>
-<<<<<<< HEAD
           <a className='btnj' href={linki2}>  <button className='joinbtn bg-primary ' >join</button></a>
-=======
-          <a href={linki}>  <button className='btn bg-primary ' >join</button></a>
->>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
         
           <div className="item">
           

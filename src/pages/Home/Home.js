@@ -2,11 +2,7 @@ import React from "react";
 import backendAPI from "../../api/backendAPI";
 import "../../components/UI/button/button.css";
 import Navbar from '../../components/Navbar'
-<<<<<<< HEAD
 
-=======
-import Footer from "../../components/UI/button/Footer";
->>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
 function Home() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
@@ -107,11 +103,7 @@ function Home() {
         {/* Footer */}
       
       </div>
-<<<<<<< HEAD
     
-=======
-      <Footer />
->>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
     </>
   );
 }
