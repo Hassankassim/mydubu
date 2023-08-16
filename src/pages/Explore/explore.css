@@ -4,7 +4,9 @@
   color: #ffffff;
   padding-bottom: 0%;
 }
-
+.blue{
+  color: rgb(4, 4, 46);
+}
 
 #cardshadow{
 height: 70%;
