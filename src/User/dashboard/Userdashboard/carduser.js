@@ -6,7 +6,11 @@ const Card1 = ({ name, image, title,button,linki,onclick }) => {
   return (
     <div className="cardnew">
     <a href={linki}   ><div className="card1">
+<<<<<<< HEAD
       <div className="card1-image4">
+=======
+      <div className="card1-image">
+>>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
         {" "}
         <img className="imgcard" src={image} alt={name} />
       </div>

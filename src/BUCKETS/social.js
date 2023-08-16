@@ -2,8 +2,13 @@ import React from "react";
 import backendAPI from "../api/backendAPI";
 import "../components/UI/button/button.css";
 import Navbar from '../components/Navbar'
+<<<<<<< HEAD
 
 function Social() {
+=======
+import Footer from "../components/UI/button/Footer";
+function Home() {
+>>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
   
@@ -39,7 +44,11 @@ function Social() {
         <div className="container mt-5">
           <div className="title">
             <div className="image-container1">
+<<<<<<< HEAD
               <h2 className="ChangedName">SOCIAL BUCKET</h2>
+=======
+              <h2 className="ChangedName">CONTACTS BUCKET</h2>
+>>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
             </div>
           </div>
           <div className="feedback1">
@@ -103,9 +112,17 @@ function Social() {
         {/* Footer */}
       
       </div>
+<<<<<<< HEAD
      
+=======
+      <Footer />
+>>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
     </>
   );
 }
 
+<<<<<<< HEAD
 export default Social;
+=======
+export default Home;
+>>>>>>> 7f529d5fa8015fade5479453ae8f78dcec20d325
