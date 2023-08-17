@@ -3,8 +3,8 @@ import './bucket.css'; // Import the unique CSS file
 
 const Card = ({name,number,linki2 }) => {
   return (
-    <div className="card7">
-      <div className="top-section">
+   <div className="card7">
+       <a href={linki2}><div className="top-section">
         <div className="border"></div>
         <div className="icons">
           <div className="logo">
@@ -47,7 +47,9 @@ const Card = ({name,number,linki2 }) => {
           </div>
         </div>
       </div>
+      </a>
     </div>
+ 
   );
 };
 

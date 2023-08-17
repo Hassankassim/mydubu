@@ -5,35 +5,53 @@ import cardimage3 from "../../Assets/img/vcf.png";
 import Navbar from '../../components/Navbar'
 import "./landing.css";
 import Card1 from "../../components/UI/button/card";
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import Createacc from "../Explore/Createacc";
-function MyVerticallyCenteredModal(props) {
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
+function BasicModal({ open, handleClose }) {
   return (
     <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-     
+      open={open}
+      onClose={handleClose}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-       <Createacc />
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+      <Box id = 'modalbx' sx={style}>
+        <Typography id="modal-modal-title" variant="h6" component="h2">
+          Welcome
+        </Typography>
+        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Createacc />
+        </Typography>
+      </Box>
     </Modal>
   );
 }
 
 function Landing() {
-  const [modalShow, setModalShow] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleCreateClick = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -50,7 +68,7 @@ function Landing() {
 
               <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
               <a href="\Learnmore">
-                <button className="explorebtn3">Jifunze Zaidi</button>
+               
               </a>
             </div>
           </div>
@@ -58,8 +76,8 @@ function Landing() {
 
         <div className="container61">
           {" "}
-          <a href="\Explore">
-            <button className="container62">1000+ users</button>
+          <a href="\Comment">
+            <button className="container62">KUHUSU SISI</button>
           </a>
         </div>
         <div className="cardnew1">
@@ -70,16 +88,12 @@ function Landing() {
               image={cardimage1}
               title="Upate link-share "
               button="Create"
-
-              
-              onclick={() => setModalShow(true)}
+              onclick={handleCreateClick}
             />
             
-            {/* Render the modal */}
-            <MyVerticallyCenteredModal
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-            />
+            {/* Render the MUI modal */}
+            <BasicModal open={modalOpen} handleClose={handleCloseModal} />
+            
             <Card1
               className="image"
               name="Jiunge kwenye Bucket zilizopo"

@@ -1,21 +1,23 @@
 import React from "react";
 import "./Userdashboard.css";
-import profilecover from "../../../Assets/img/profile cover.jpg";
-import Userfooter from "../../dashboard/Userfooter";
+import NavbarExample from "../../../components/Navbar";
+import Userfooter from "../Userfooter";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import profileico from "../../../Assets/img/onlyprofile.png";
 function Profile() {
   return (
     <div>
+    
       {" "}
       <div className="card512">
         <div className="card55 image-with-overlay">
           <div className="content">
-            <span className="title1 gara">
-              Umepitia changamoto ya kushindwa kusave number za watu wengi kwa
-              urahisi
+            <span className="title1 gara green">
+              PROFILE 
             </span>
 
-            <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
+            <p className=" green desc ultra ">"Karibu Dubu!"</p>
           </div>
         </div>
         <div className="container61">
@@ -30,10 +32,21 @@ function Profile() {
       <div className="namep black"><h2>Sani</h2>
       <p>hassankassim553@gmail.com</p></div>
       <div className="row">
-        <p>lorem</p>
+        <div className="bucketrow">
+        <Row>
+        <Col className="text-center green">BUCKET</Col>
+        
+        <Col className="text-center green">JOINED</Col> 
+      </Row>
+        <Row>
+        <Col className="text-center"><h2>0</h2></Col>
+        
+        <Col className="text-center "><h2>0</h2></Col> 
+      </Row>
+        </div>
 
       </div>
-      <Userfooter />{" "}
+   
     </div>
   );
 }

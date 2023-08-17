@@ -1,3 +1,9 @@
+.bucketrow{
+  background-color: #177ad142;
+  padding: 3%;
+  width: 100%;
+}
+
 .namep{
   margin-top: 100px;
   margin-left: 100px;
@@ -39,7 +45,7 @@
     height: 100px;
     background-color: #00325e;
     border-radius: 100%;
-    border: 17px solid #ebeff7;
+    border: 2px solid #00d820;
     display: flex;
     justify-content: center;
     align-items: center;

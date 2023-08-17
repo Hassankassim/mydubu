@@ -3,7 +3,7 @@ import backendAPI from "../api/backendAPI";
 import "../components/UI/button/button.css";
 import Navbar from '../components/Navbar'
 
-function Uni() {
+function Userbucket() {
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
   
@@ -39,7 +39,7 @@ function Uni() {
         <div className="container mt-5">
           <div className="title">
             <div className="image-container1">
-              <h2 className="ChangedName text-center">UNI BUCKET</h2>
+              <h2 className="ChangedName">BUSINESS BUCKET</h2>
             </div>
           </div>
           <div className="feedback1">
@@ -103,11 +103,9 @@ function Uni() {
         {/* Footer */}
       
       </div>
-   
+    
     </>
   );
 }
 
-
-export default Uni;
-
+export default Userbucket;

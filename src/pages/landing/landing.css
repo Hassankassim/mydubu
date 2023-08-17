@@ -1,6 +1,10 @@
 .cardacc{
   border-radius: 120px;
 }
+#modalbx{
+  border-radius: 8px;
+  border: 3px solid #5ada3a;
+}
 .card6 {
   display: flex;
   justify-content: center;

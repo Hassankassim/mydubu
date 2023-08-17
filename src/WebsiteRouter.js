@@ -15,13 +15,17 @@ import Bucket from "./components/UI/button/Bucket";
 import Userfooter from "./User/dashboard/Userfooter";
 import Joiningbucket from "./components/UI/button/joinbucket";
 import ChangeName from "./pages/ChangeName/ChangeName";
-import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
-import Profile from "./User/dashboard/Userdashboard/profile";
+// import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
+import Userdashboard2 from "./User/dashboard/Userdashboard/Userdashboard2";
+import Profile from "./User/dashboard/Userdashboard/Profile";
 import Business from './BUCKETS/Business'
+
 import NewBucket from "./User/dashboard/newbucket";
 import Uni from './BUCKETS/Uni'
 import Social from './BUCKETS/Social'
 import Student from './BUCKETS/Student'
+import Userbucket from "./BUCKETS/Userbucket";
+import Comment from './pages/Testimony/Comment'
 const WebsiteRouter = () => {
   return (
     <Router>
@@ -36,7 +40,8 @@ const WebsiteRouter = () => {
         <Route path="/Login" element={<Login />} />
 
         <Route path="/Userfooter" element={<Userfooter />} />
-        <Route path="/Userdashboard" element={<Userdashboard />} />
+        {/* <Route path="/Userdashboard" element={<Userdashboard />} /> */}
+        <Route path="/Userdashboard2" element={<Userdashboard2 />} />
         <Route path="/Profile" element={<Profile />} />
 
         <Route path="/Createacc" element={<Createacc />} />
@@ -44,10 +49,12 @@ const WebsiteRouter = () => {
 
         <Route path="/ChangeName" element={<ChangeName />} />
         <Route path="/Business" element={<Business />} />
+        <Route path="/Userbucket" element={<Userbucket />} />
         <Route path="/Uni" element={<Uni />} />
         <Route path="/Social" element={<Social />} />
         <Route path="/Student" element={<Student />} />
         <Route path="/Newbucket" element={<NewBucket />} />
+        <Route path="/Comment" element={<Comment />} />
       </Routes>
     </Router>
   );
