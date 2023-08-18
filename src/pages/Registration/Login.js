@@ -22,7 +22,7 @@ const Login = () => {
         </div>
 
         <button  className="enter">Enter</button>
-       <a href='/Userdashboard2' > <p>You forgot password!?</p></a>
+       <a href='/Userdashboard' > <p>You forgot password!?</p></a>
      </div>
     </div>
     </>

@@ -3,10 +3,13 @@
   padding: 3%;
   width: 100%;
 }
+.pro2{
+  margin-left: 5px;
+}
 
 .namep{
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 .cardacc{
     border-radius: 120px;

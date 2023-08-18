@@ -1,45 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import PersonIcon from '@mui/icons-material/Person';
-import CreateIcon from '@mui/icons-material/Create';
-import ExploreIcon from '@mui/icons-material/Explore';
+import RestoreIcon from '@mui/icons-material/Restore';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ArchiveIcon from '@mui/icons-material/Archive';
 import Paper from '@mui/material/Paper';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemText from '@mui/material/ListItemText';
+import Avatar from '@mui/material/Avatar';
 import NavbarExample from '../../components/Navbar';
-import Testing from './Testing';
-import Testing2 from './Testing2';
-import Testing3 from './Testing3'; // Import the Testing3 component
+
+
+function refreshMessages() {
+  const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+
+  return Array.from(new Array(50)).map(
+    () => messageExamples[getRandomInt(messageExamples.length)]
+  );
+}
 
 export default function FixedBottomNavigation() {
-  const [activeTab, setActiveTab] = useState(0);
+  const [value, setValue] = useState(0);
+  const ref = useRef(null);
+  const [messages, setMessages] = useState(() => refreshMessages());
 
-  return (
-    <>
-      <NavbarExample />
-      <Box sx={{ pb: 7 }}>
-        <CssBaseline />
+  useEffect(() => {
+    ref.current.ownerDocument.body.scrollTop = 0;
+    setMessages(refreshMessages());
+  }, [value, setMessages]);
 
-        {/* Render tab content based on the active tab */}
-        {activeTab === 0 && <Testing />} {/* Render Testing component for "Profile" tab */}
-        {activeTab === 1 && <Testing2 />} {/* Render Testing2 component for "Create" tab */}
-        {activeTab === 2 && <Testing3 />} {/* Render Testing3 component for "Explore" tab */}
-        
-        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-          <BottomNavigation
-            showLabels
-            value={activeTab}
-            onChange={(event, newValue) => {
-              setActiveTab(newValue);
-            }}
-          >
-            <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
-            <BottomNavigationAction label="Create" icon={<CreateIcon />} />
-            <BottomNavigationAction label="Explore" icon={<ExploreIcon />} />
-          </BottomNavigation>
-        </Paper>
-      </Box>
+  return ( <>
+<NavbarExample />
+    <Box sx={{ pb: 7 }} ref={ref}>
+      <CssBaseline />
+      <List>
+        {messages.map(({ primary, secondary, person }, index) => (
+          <ListItem button key={index + person}>
+            <ListItemAvatar>
+              <Avatar alt="Profile Picture" src={person} />
+            </ListItemAvatar>
+            <ListItemText primary={primary} secondary={secondary} />
+          </ListItem>
+        ))}
+      </List>
+      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+        </BottomNavigation>
+      </Paper>
+    </Box>
     </>
   );
 }
+
+const messageExamples = [
+  {
+    primary: 'Brunch this week?',
+    secondary: "I'll be in the neighbourhood this week. Let's grab a bite to eat",
+    person: '/static/images/avatar/5.jpg',
+  },
+  {
+    primary: 'Birthday Gift',
+    secondary: `Do you have a suggestion for a good present for John on his work
+      anniversary. I am really confused & would love your thoughts on it.`,
+    person: '/static/images/avatar/1.jpg',
+  },
+  // ... other message examples ...
+];

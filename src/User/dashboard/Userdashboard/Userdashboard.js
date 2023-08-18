@@ -1,83 +1,45 @@
-import React, { useState } from "react";
-// import Userdashboard from '../Userdashboard/Userdashboard'
-import cardimage1 from "../../../Assets/img/whit bucket-50.png";
-import cardimage2 from "../../../Assets/img/whatsapp.png";
-import cardimage3 from "../../../Assets/img/vcf.png";
-import Footeruser from '../Userfooter'
-import "./Userdashboard.css";
-import Card1 from "./carduser";
-import Navbar from '../../../components/Navbar'
+import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import PersonIcon from '@mui/icons-material/Person';
+import CreateIcon from '@mui/icons-material/Create';
+import ExploreIcon from '@mui/icons-material/Explore';
+import Paper from '@mui/material/Paper';
+import NavbarExample from '../../../components/Navbar';
+import Profile from './Profile'; // Renamed Testing to Profile
+import Bucket from './Bucket';   // Renamed Testing2 to Bucket
+import Explore from './Explore'; // Renamed Testing3 to Explore
 
-
-function Userdashboard() {
+export default function Userdashboard() { // Changed function name to Userdashboard2
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <>
-  
-  
-    
-      <div className="background">
+      <NavbarExample />
+      <Box sx={{ pb: 7 }}>
+        <CssBaseline />
+
+        {/* Render tab content based on the active tab */}
+        {activeTab === 0 && <Profile />} {/* Render Profile component for "Profile" tab */}
+        {activeTab === 1 && <Bucket />}  {/* Render Bucket component for "Bucket" tab */}
+        {activeTab === 2 && <Explore />} {/* Render Explore component for "Explore" tab */}
         
-        <div className="card51">
-          <div className="card5 image-with-overlay">
-            <div className="content">
-              <span className="title1">
-                Umepitia changamoto ya kushindwa kusave number za watu wengi kwa
-                urahisi
-              </span>
-
-              <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
-             
-            </div>
-          </div>
-        </div>
-
-        <div className="container61">
-          {" "}
-          <a href="\Explore">
-            <button className="container62 gara">YOUR BUCKETS</button>
-          </a>
-        </div>
-        
-        <div className="cardnew1">
-        <div><h5 className="black gara">Get connected and share</h5></div>
-          <div className="">
-            <Card1
-              className="image"
-              name="Tengeneza Bucket"
-              image={cardimage1}
-              title="Upate link-share "
-           linki="/Newbucket"
-
-              
-              
-            />
-            
-          
-            <Card1
-              className="image"
-              name="Jiunge kwenye Bucket zilizopo"
-              image={cardimage3}
-              title="Bucket mbalimbali"
-              
-              linki="/Joiningbucket"
-            />
-          </div>
-          <div className="">
-            <Card1
-              className="image"
-              name="tafuta number"
-              image={cardimage2}
-              title="makampuni mbalimbali"
-           
-              linki="/explore"
-            />
-          </div>
-        </div>
-      </div>
-
+        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+          <BottomNavigation
+            showLabels
+            value={activeTab}
+            onChange={(event, newValue) => {
+              setActiveTab(newValue);
+            }}
+          >
+            <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
+            <BottomNavigationAction label="Bucket" icon={<CreateIcon />} />
+            <BottomNavigationAction label="Explore" icon={<ExploreIcon />} />
+          </BottomNavigation>
+        </Paper>
+      </Box>
     </>
   );
 }
-
-export default Userdashboard;

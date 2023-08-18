@@ -16,7 +16,7 @@ import Userfooter from "./User/dashboard/Userfooter";
 import Joiningbucket from "./components/UI/button/joinbucket";
 import ChangeName from "./pages/ChangeName/ChangeName";
 // import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
-import Userdashboard2 from "./User/dashboard/Userdashboard/Userdashboard2";
+import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
 import Profile from "./User/dashboard/Userdashboard/Profile";
 import Business from './BUCKETS/Business'
 
@@ -41,7 +41,7 @@ const WebsiteRouter = () => {
 
         <Route path="/Userfooter" element={<Userfooter />} />
         {/* <Route path="/Userdashboard" element={<Userdashboard />} /> */}
-        <Route path="/Userdashboard2" element={<Userdashboard2 />} />
+        <Route path="/Userdashboard" element={<Userdashboard />} />
         <Route path="/Profile" element={<Profile />} />
 
         <Route path="/Createacc" element={<Createacc />} />
