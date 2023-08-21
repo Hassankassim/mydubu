@@ -497,15 +497,16 @@ padding: 20px 30px;
 
 
 .explorebtn {
+  margin: 4px;
   color: #1BFD9C;
   padding: 0.1em 1.1em;
   font-size: 18px;
   border-radius: 0.5em;
   background: #00325e;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #17ec10;
   transition: all .3s;
   box-shadow: 6px 6px 12px #4f917289,
-              -6px -6px 12px #62ed9e50;
+              
  }
  
  .explorebtn:active {

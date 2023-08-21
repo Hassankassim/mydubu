@@ -1,8 +1,12 @@
 import React from 'react'
 
 function Explore() {
-  return (
-    <div>Explore</div>
+  return (<>
+    
+<div className='explorec'>
+
+    </div>
+    </>
   )
 }
 

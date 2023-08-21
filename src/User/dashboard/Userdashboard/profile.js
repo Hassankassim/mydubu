@@ -1,5 +1,6 @@
 import React from "react";
 import "./Userdashboard.css";
+import plus2 from '../../../Assets/img/plus4.png'
 import NavbarExample from "../../../components/Navbar";
 import Userfooter from "../Userfooter";
 import Row from "react-bootstrap/Row";
@@ -46,15 +47,21 @@ function Profile() {
               <h2>0</h2>
             </Col>
           </Row>
+          <hr></hr>
+          <div id="viewbtn"><button className="btn bg-primary">VIEW YOUR BUCKETS</button></div>
         </div>
         <div className=" pro2 mb-5 ">
-          <h4 className="blue">INTERETED</h4>
+          <h4 className="blue text-center">INTERETED</h4>
+
+
+
+
 <ul>
-  <li>games</li>
-  <li>movies</li>
-  <li>Academic</li>
-  <li>Social</li>
-  <li><span>add</span></li>
+  <li className="interetedlist">games</li>
+  <li className="interetedlist1">movies</li>
+  <li className="interetedlist1">Academic</li>
+  <li className="interetedlist2">Social</li>
+  <li  className="blue" ><a href="#">add<span><img width={'16px'} src={plus2}></img ></span></a></li>
 
 </ul>
         </div>

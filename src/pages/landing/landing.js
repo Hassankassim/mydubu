@@ -2,22 +2,26 @@ import React, { useState } from "react";
 import cardimage1 from "../../Assets/img/whit bucket-50.png";
 import cardimage2 from "../../Assets/img/whatsapp.png";
 import cardimage3 from "../../Assets/img/vcf.png";
-import Navbar from '../../components/Navbar'
+import Navbar from "../../components/Navbar";
 import "./landing.css";
 import Card1 from "../../components/UI/button/card";
 import Createacc from "../Explore/Createacc";
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import ChooseUs from "./ChooseUs";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
@@ -30,7 +34,7 @@ function BasicModal({ open, handleClose }) {
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Box id = 'modalbx' sx={style}>
+      <Box id="modalbx" sx={style}>
         <Typography id="modal-modal-title" variant="h6" component="h2">
           Welcome
         </Typography>
@@ -56,7 +60,7 @@ function Landing() {
   return (
     <>
       <Navbar />
-    
+
       <div className="background">
         <div className="card51">
           <div className="card5 image-with-overlay">
@@ -68,7 +72,11 @@ function Landing() {
 
               <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
               <a href="\Learnmore">
-               
+                <button className="btn bg-dark explorebtn"> lOG IN</button>
+                <button className="btn bg-transparent explorebtn">
+                  {" "}
+                  SIGN UP
+                </button>
               </a>
             </div>
           </div>
@@ -77,7 +85,7 @@ function Landing() {
         <div className="container61">
           {" "}
           <a href="\Comment">
-            <button className="container62">KUHUSU SISI</button>
+            
           </a>
         </div>
         <div className="cardnew1">
@@ -90,10 +98,10 @@ function Landing() {
               button="Create"
               onclick={handleCreateClick}
             />
-            
+
             {/* Render the MUI modal */}
             <BasicModal open={modalOpen} handleClose={handleCloseModal} />
-            
+
             <Card1
               className="image"
               name="Jiunge kwenye Bucket zilizopo"
@@ -113,9 +121,32 @@ function Landing() {
               linki="/explore"
             />
           </div>
+         
         </div>
+        <Container>
+           <div>
+            <h5>Why you should use us</h5>
+          </div>
+          <Row>
+            <Col xs={{ order: "last" }}>
+              <ChooseUs
+                titlec="Expand Reach:"
+                description=" Dubu helps you reach 
+                more customers beyond your locality, 
+                boosting visibility and growth."
+              />
+            </Col>
+            <Col xs>
+              <ChooseUs titlec="Flexible Tools" description=" Showcase products, manage inventory, and engage buyers easily 
+              on Dubu's user-friendly platform." />
+            </Col>
+            <Col xs={{ order: "first" }}>
+              <ChooseUs titlec="Community Support:" description=" Connect with other sellers, exchange insights, and learn from a collaborative business community." />
+            </Col>
+          </Row>
+        </Container>
+        <hr></hr>
       </div>
-    
     </>
   );
 }
