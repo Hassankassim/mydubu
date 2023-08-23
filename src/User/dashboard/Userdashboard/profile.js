@@ -51,7 +51,7 @@ function Profile() {
           <div id="viewbtn"><button className="btn bg-primary">VIEW YOUR BUCKETS</button></div>
         </div>
         <div className=" pro2 mb-5 ">
-          <h4 className="blue text-center">INTERETED</h4>
+          <h4 className="blue text-center">INTERESTED</h4>
 
 
 

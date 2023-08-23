@@ -7,7 +7,8 @@ import Footeruser from '../Userfooter'
 import "./Userdashboard.css";
 import Card1 from "./carduser";
 import Navbar from '../../../components/Navbar'
-
+import { Col,Row,Container } from "react-bootstrap";
+import ChooseUs from "../../../pages/landing/ChooseUs";
 
 function Userdashboard() {
 
@@ -74,6 +75,29 @@ function Userdashboard() {
             />
           </div>
         </div>
+        <Container>
+           <div>
+            <h5 className="gara ">Why you should use us</h5>
+          </div>
+          <Row>
+            <Col xs={{ order: "last" }}>
+              <ChooseUs
+                titlec="Expand Reach:"
+                description=" Dubu helps you reach 
+                more customers beyond your locality, 
+                boosting visibility and growth."
+              />
+            </Col>
+            <Col xs>
+              <ChooseUs titlec="Flexible Tools" description=" Showcase products, manage inventory, and engage buyers easily 
+              on Dubu's user-friendly platform." />
+            </Col>
+            <Col xs={{ order: "first" }}>
+              <ChooseUs titlec="Community Support:" description=" Connect with other sellers, exchange insights, and learn from a collaborative business community." />
+            </Col>
+          </Row>
+        </Container>
+
       </div>
 
     </>

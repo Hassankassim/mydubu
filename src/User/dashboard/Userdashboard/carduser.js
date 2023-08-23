@@ -5,7 +5,8 @@ import nextico from '../../../Assets/img/next.png'
 const Card1 = ({ name, image, title,button,linki,onclick }) => {
   return (
     <div className="cardnew">
-    <a href={linki}   ><div className="card1">
+      <div className="card1">
+    <a href={linki}   ><div className="">
       <div className="card1-image4">
         {" "}
         <img className="imgcard" src={image} alt={name} />
@@ -21,6 +22,7 @@ const Card1 = ({ name, image, title,button,linki,onclick }) => {
       </div>
      
     </div></a>
+    </div>
     </div>
   );
 };

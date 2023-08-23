@@ -71,13 +71,14 @@ function Landing() {
               </span>
 
               <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
-              <a href="\Learnmore">
-                <button className="btn bg-dark explorebtn"> lOG IN</button>
-                <button className="btn bg-transparent explorebtn">
-                  {" "}
-                  SIGN UP
-                </button>
+              <a href="\login">
+                <button className="btn bg-dark explorebtn gara"> lOG IN</button>
+               
               </a>
+              <a   href="\Registration" > <button className="btn bg-transparent explorebtn gara">
+               
+               SIGN UP
+             </button></a>
             </div>
           </div>
         </div>
@@ -88,8 +89,9 @@ function Landing() {
             
           </a>
         </div>
+        
         <div className="cardnew1">
-          <div className="">
+          <div>
             <Card1
               className="image"
               name="Tengeneza Bucket"
@@ -102,6 +104,8 @@ function Landing() {
             {/* Render the MUI modal */}
             <BasicModal open={modalOpen} handleClose={handleCloseModal} />
 
+            </div>
+<div>
             <Card1
               className="image"
               name="Jiunge kwenye Bucket zilizopo"
@@ -111,7 +115,7 @@ function Landing() {
               linki="/Joiningbucket"
             />
           </div>
-          <div className="">
+      <div>
             <Card1
               className="image"
               name="tafuta number"
@@ -120,12 +124,12 @@ function Landing() {
               button="search"
               linki="/explore"
             />
-          </div>
-         
+        </div>
+      
         </div>
         <Container>
            <div>
-            <h5>Why you should use us</h5>
+            <h5 className="gara ">Why you should use us</h5>
           </div>
           <Row>
             <Col xs={{ order: "last" }}>

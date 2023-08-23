@@ -1,13 +1,22 @@
-import React from 'react'
+import React from 'react';
+import './Userdashboard.css'; // Make sure to adjust the file path if needed
 
-function Explore() {
+function Explorecard() {
   return (<>
-    
-<div className='explorec'>
-
+  <h5 className='gara '>Find a company contacts</h5>
+    <div className='center'>
+      
+    <form className="explore-form">
+      <input className="explore-input" type="text" placeholder="Name of a company" />
+      <input className="explore-input" type="text" placeholder="Place..eg Arusha" />
+      <textarea className="explore-textarea" placeholder="Enter Description"></textarea>
+      <center>
+        <button className="explore-button">Search</button>
+      </center>
+    </form>
     </div>
     </>
-  )
+  );
 }
 
-export default Explore
+export default Explorecard;
