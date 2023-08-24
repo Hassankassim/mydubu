@@ -6,7 +6,7 @@ class RegistrationForm extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
+        <Navbar linkico="/Landing" />
         <div className="b1">
           <form className="formh">
             <p className="title">Register</p>

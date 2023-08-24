@@ -9,7 +9,7 @@ import Card1 from "./carduser";
 import Navbar from '../../../components/Navbar'
 import { Col,Row,Container } from "react-bootstrap";
 import ChooseUs from "../../../pages/landing/ChooseUs";
-
+import Explorecard from "./Explore";
 function Userdashboard() {
 
   return (
@@ -23,11 +23,10 @@ function Userdashboard() {
           <div className="card5 image-with-overlay">
             <div className="content">
               <span className="title1">
-                Umepitia changamoto ya kushindwa kusave number za watu wengi kwa
-                urahisi
+               Get Connected to Your Costumers
               </span>
 
-              <p className="desc ultra">"Je!, Umejaribu Dubu!"</p>
+              <p className="desc ultra blue">"Experience the joy "</p>
              
             </div>
           </div>
@@ -35,9 +34,9 @@ function Userdashboard() {
 
         <div className="container61">
           {" "}
-          <a href="\Explore">
+          {/* <a href="#">
             <button className="container62 gara">YOUR BUCKETS</button>
-          </a>
+          </a> */}
         </div>
         
         <div className="cardnew1">
@@ -99,7 +98,7 @@ function Userdashboard() {
         </Container>
 
       </div>
-
+<Explorecard />
     </>
   );
 }

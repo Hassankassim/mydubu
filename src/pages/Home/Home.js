@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <>
-    <Navbar />
+    <Navbar linkico="/Landing" />
       <div className="navcomp">
         {/* Main content */}
         <div className="container mt-5">

@@ -1,10 +1,11 @@
 import React from 'react';
 import './usercard.css'
 import NavbarExample from '../../components/Navbar';
+import Userdashboard from './Userdashboard/Userdashboard';
 function NewBucket() {
   return (
     <>
-    <NavbarExample />
+    <NavbarExample linkico= "/Userdashboard"  />
     <div className='newbucket'>
         
     <section className="section_form">
@@ -20,6 +21,7 @@ function NewBucket() {
     
     </section>
     </div>
+    
     </>
   );
 }

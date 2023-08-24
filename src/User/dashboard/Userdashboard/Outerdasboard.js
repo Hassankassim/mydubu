@@ -8,27 +8,24 @@ import CreateIcon from '@mui/icons-material/Create';
 import ExploreIcon from '@mui/icons-material/Explore';
 import HomeIcon from '@mui/icons-material/Home';
 import Paper from '@mui/material/Paper';
-import NavbarExample from '../../../components/Navbar';
-import Profile from './Profile'; // Renamed Testing to Profile
-import Bucket from './Bucket';   // Renamed Testing2 to Bucket
+import Bucket from './Bucket';   // Import the Bucket component
 import Explore from './Explore'; // Renamed Testing3 to Explore
-import Create from './Create';
+import Create from './Create';   // Import the Create compo
+import Landing from '../../../pages/landing/landing';
 
-// Import the Create component
-export default function Userdashboard() {
+
+export default function Outerdashboard() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <>
-      <NavbarExample linkico="#" />
       <Box sx={{ pb: 7 }}>
         <CssBaseline />
 
         {/* Render tab content based on the active tab */}
-        {activeTab === 0 && <Bucket />} {/* Render Profile component for "Profile" tab */}
-        {activeTab === 1 && <Bucket />}  {/* Render Bucket component for "Bucket" tab */}
-        {activeTab === 2 && <Explore />} {/* Render Explore component for "Explore" tab */}
-        {activeTab === 3 && <Profile />}  {/* Render Create component for "Create" tab */}
+        {activeTab === 0 && <Bucket />}  {/* Render Bucket component for "Home" tab */}
+        {activeTab === 1 && <Create />}  {/* Render Create component for "Create" tab */}
+        {activeTab === 2 && <Landing />} {/* Render Explore component for "Explore" tab */}
         
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
           <BottomNavigation
@@ -38,9 +35,10 @@ export default function Userdashboard() {
               setActiveTab(newValue);
             }}
           >
-             <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-            <BottomNavigationAction label="Bucket" icon={<CreateIcon />} />
-            <BottomNavigationAction label="Profile" icon={<PersonIcon />} />
+            <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+            <BottomNavigationAction label="Create" icon={<CreateIcon />} />
+            <BottomNavigationAction label="Explore" icon={<ExploreIcon />} />
+            
             {/* Add more tabs if needed */}
           </BottomNavigation>
         </Paper>

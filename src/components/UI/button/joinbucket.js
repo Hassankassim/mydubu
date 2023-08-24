@@ -3,10 +3,12 @@ import Bucket from "./Bucket";
 import "./bucket.css";
 import NavbarExample from "../../Navbar";
 
+
+
 function Joinbucket() {
   return (
     <>
-      <NavbarExample />
+      <NavbarExample linkico="/Landing" />
       <div className="container">
         <div id="joingbucket">
           <h5 className="text-center gara">Choose a bucket and join</h5>

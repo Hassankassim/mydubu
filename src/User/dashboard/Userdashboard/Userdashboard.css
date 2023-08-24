@@ -9,7 +9,9 @@
   width: 300px;
   height: 350px;
 }
-
+.explore-container{
+  margin-top: 10px;
+}
 .explore-form::before {
   content: '';
   background-image: linear-gradient(45deg, rgb(7, 199, 7), #00d0ff);

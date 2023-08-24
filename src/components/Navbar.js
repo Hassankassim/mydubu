@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import logo from '../Assets/img/icondubu.png'
-const NavbarExample = () => {
+const NavbarExample = ({linkico}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -11,7 +11,7 @@ const NavbarExample = () => {
 
   return (
     <nav className="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="/Landing">
+      <a className="navbar-brand" href={linkico}>
         <img  width={'62px'} src={logo}></img>
       </a>
       <button

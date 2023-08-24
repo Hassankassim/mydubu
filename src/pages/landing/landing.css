@@ -1,3 +1,15 @@
+
+.accdion1{
+justify-content: center;
+display: flex;
+}
+
+.accdion{
+width: 70%;
+}
+
+
+
 .cardacc{
   border-radius: 120px;
 }

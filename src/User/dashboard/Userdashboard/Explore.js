@@ -3,6 +3,7 @@ import './Userdashboard.css'; // Make sure to adjust the file path if needed
 
 function Explorecard() {
   return (<>
+  <div className="explore-container">
   <h5 className='gara '>Find a company contacts</h5>
     <div className='center'>
       
@@ -15,6 +16,8 @@ function Explorecard() {
       </center>
     </form>
     </div>
+    </div>
+
     </>
   );
 }
