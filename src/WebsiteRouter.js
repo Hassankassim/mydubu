@@ -21,7 +21,7 @@ import Profile from "./User/dashboard/Userdashboard/Profile";
 import Business from './BUCKETS/Business'
 
 import NewBucket from "./User/dashboard/newbucket";
-import Uni from './BUCKETS/Uni'
+
 import Social from './BUCKETS/Social'
 import Student from './BUCKETS/Student'
 import Userbucket from "./BUCKETS/Userbucket";
@@ -50,7 +50,7 @@ const WebsiteRouter = () => {
         <Route path="/ChangeName" element={<ChangeName />} />
         <Route path="/Business" element={<Business />} />
         <Route path="/Userbucket" element={<Userbucket />} />
-        <Route path="/Uni" element={<Uni />} />
+        
         <Route path="/Social" element={<Social />} />
         <Route path="/Student" element={<Student />} />
         <Route path="/Newbucket" element={<NewBucket />} />

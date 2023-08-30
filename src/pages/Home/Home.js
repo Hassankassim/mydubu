@@ -4,6 +4,7 @@ import "../../components/UI/button/button.css";
 import Navbar from '../../components/Navbar'
 
 function Home() {
+
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState(null);
   
