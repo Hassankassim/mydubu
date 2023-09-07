@@ -6,8 +6,10 @@ class RegistrationForm extends React.Component {
   render() {
     return (
       <>
+      
         <Navbar linkico="/Landing" />
-        <div className="b1">
+        <div className="center">
+        <div className="registercard">
           <form className="formh">
             <p className="title">Register</p>
             <p className="message">
@@ -42,6 +44,7 @@ class RegistrationForm extends React.Component {
               Already have an account? <a href="/login">Sign in</a>
             </p>
           </form>
+        </div>
         </div>
       </>
     );

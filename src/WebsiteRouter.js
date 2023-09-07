@@ -18,13 +18,11 @@ import ChangeName from "./pages/ChangeName/ChangeName";
 // import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
 import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
 import Profile from "./User/dashboard/Userdashboard/Profile";
-import Business from './BUCKETS/Business'
+
 
 import NewBucket from "./User/dashboard/newbucket";
 
-import Social from './BUCKETS/Social'
-import Student from './BUCKETS/Student'
-import Userbucket from "./BUCKETS/Userbucket";
+
 import Comment from './pages/Testimony/Comment'
 const WebsiteRouter = () => {
   return (
@@ -38,21 +36,13 @@ const WebsiteRouter = () => {
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Bucket" element={<Bucket />} />
         <Route path="/Login" element={<Login />} />
-
         <Route path="/Userfooter" element={<Userfooter />} />
         {/* <Route path="/Userdashboard" element={<Userdashboard />} /> */}
         <Route path="/Userdashboard" element={<Userdashboard />} />
         <Route path="/Profile" element={<Profile />} />
-
         <Route path="/Createacc" element={<Createacc />} />
         <Route path="/Joiningbucket" element={<Joiningbucket />} />
-
         <Route path="/ChangeName" element={<ChangeName />} />
-        <Route path="/Business" element={<Business />} />
-        <Route path="/Userbucket" element={<Userbucket />} />
-        
-        <Route path="/Social" element={<Social />} />
-        <Route path="/Student" element={<Student />} />
         <Route path="/Newbucket" element={<NewBucket />} />
         <Route path="/Comment" element={<Comment />} />
       </Routes>
