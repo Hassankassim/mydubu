@@ -2,7 +2,7 @@ import React from "react";
 import "./Userdashboard.css";
 import plus2 from '../../../Assets/img/plus4.png'
 import NavbarExample from "../../../components/Navbar";
-import Userfooter from "../Userfooter";
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import profileico from "../../../Assets/img/onlyprofile.png";

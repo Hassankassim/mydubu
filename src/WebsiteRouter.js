@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Download from "./pages/Download/Download";
 import App from "./App";
 import Home from "./pages/Home/Home";
-import Explore from "./User/dashboard/Userdashboard/Explore";
+
 import Landing from "./pages/landing/landing";
 
 import Registration from "./pages/Registration/Registration";
@@ -12,7 +12,7 @@ import Login from "./pages/Registration/Login";
 import Learnmore from "./components/UI/button/Learnmore";
 import Createacc from "./pages/Explore/Createacc";
 import Bucket from "./User/dashboard/Userdashboard/Bucket";
-import Userfooter from "./User/dashboard/Userfooter";
+
 import Joiningbucket from "./components/UI/button/joinbucket";
 import ChangeName from "./pages/ChangeName/ChangeName";
 // import Userdashboard from "./User/dashboard/Userdashboard/Userdashboard";
@@ -28,7 +28,7 @@ const WebsiteRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/explore" element={<Explore />} />
+        
         <Route path="/Learnmore" element={<Learnmore />} />
         <Route path="/" element={<Home />} />
         <Route path="/download" element={<Download />} />
@@ -36,7 +36,7 @@ const WebsiteRouter = () => {
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Bucket" element={<Bucket />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Userfooter" element={<Userfooter />} />
+        
         {/* <Route path="/Userdashboard" element={<Userdashboard />} /> */}
         <Route path="/Userdashboard" element={<Userdashboard />} />
         <Route path="/Profile" element={<Profile />} />

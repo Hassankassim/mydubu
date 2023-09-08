@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import cardimage1 from "../../../Assets/img/whit bucket-50.png";
 import cardimage2 from "../../../Assets/img/whatsapp.png";
 import cardimage3 from "../../../Assets/img/vcf.png";
-import Footeruser from '../Userfooter'
+
 import "./Userdashboard.css";
 import Card1 from "./carduser";
 import Navbar from '../../../components/Navbar'
 import { Col,Row,Container } from "react-bootstrap";
 import ChooseUs from "../../../pages/landing/ChooseUs";
-import Explorecard from "./Explore";
 function Userdashboard() {
 
   return (
@@ -98,7 +97,7 @@ function Userdashboard() {
         </Container>
 
       </div>
-<Explorecard />
+
     </>
   );
 }

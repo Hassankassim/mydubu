@@ -13,7 +13,7 @@ import ChooseUs from "./ChooseUs";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Explore from  '../../User/dashboard/Userdashboard/Explore' 
+
 import Learnmore from '../../components/UI/button/Learnmore'
 import { Accordion } from "react-bootstrap";
 

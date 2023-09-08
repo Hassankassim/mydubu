@@ -1,5 +1,5 @@
 import React from 'react';
-import './Userfooter'; // Import the external CSS file
+// Import the external CSS file
 
 const TopNavbarWithText = () => {
   return (
