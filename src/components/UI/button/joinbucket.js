@@ -8,11 +8,11 @@ import NavbarExample from "../../Navbar";
 function Joinbucket() {
   return (
     <>
-      <NavbarExample linkico="/Landing" />
+      <NavbarExample linkico="/" />
       <div className="container">
         <div id="joingbucket">
           <h5 className="text-center gara">Choose a bucket and join</h5>
-          
+          <h6 className="red">services is not available for now. Enjoy others services</h6>
           <div className="bucket-container">
             <div className="bucket-pair">
               <Bucket
@@ -43,10 +43,8 @@ function Joinbucket() {
                 linki="#"
               />
             </div>
-            <p className="text-center">
-          Get ready to connect, share, and spread
-            joy as we work together for a better tomorrow. Let's start bucketing
-            happiness and change – together!
+            <p className="text-center blue">
+          This services is not available for now,We will soon be there for new buckets
           </p>
           </div>
         </div>

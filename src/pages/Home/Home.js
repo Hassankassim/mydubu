@@ -34,7 +34,7 @@ function Home() {
 
   return (
     <>
-    <Navbar linkico="/Landing" />
+    <Navbar linkico="/" />
       <div className="navcomp">
         {/* Main content */}
         <div className="container mt-5">

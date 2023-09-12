@@ -5,6 +5,12 @@
   justify-content: center;
   position: relative;
 }
+.blue{
+  color: blue;
+}
+.red{
+  color: red;
+}
 .btnj{
   justify-content: center;
   display: flex;

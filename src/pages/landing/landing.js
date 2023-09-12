@@ -133,23 +133,23 @@ function Landing() {
         </div>
         <Container>
            <div>
-            <h5 className="gara ">Why you should use us</h5>
+            <h5 className="gara ">How we operates</h5>
           </div>
           <Row>
             <Col xs={{ order: "last" }}>
               <ChooseUs
-                titlec="Expand Reach:"
+                titlec="Whassap community:"
                 description=" Dubu helps you reach 
                 more customers beyond your locality, 
                 boosting visibility and growth."
               />
             </Col>
             <Col xs>
-              <ChooseUs titlec="Flexible Tools" description=" Showcase products, manage inventory, and engage buyers easily 
+              <ChooseUs titlec="Bussines Community" description=" Showcase products, manage inventory, and engage buyers easily 
               on Dubu's user-friendly platform." />
             </Col>
             <Col xs={{ order: "first" }}>
-              <ChooseUs titlec="Community Support:" description=" Connect with other sellers, exchange insights, and learn from a collaborative business community." />
+              <ChooseUs titlec=" Student Community:" description=" Connect with other sellers, exchange insights, and learn from a collaborative business community." />
             </Col>
           </Row>
         </Container>
@@ -157,42 +157,6 @@ function Landing() {
       </div>
 
  
-<div className="accdion1">
- <div className="accdion">
- <Accordion defaultActiveKey="0" flush>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header id="accordheader">
-            wafanyabiashara wanawezaje kufaidika!?
-          </Accordion.Header>
-          <Accordion.Body>
-            <strong>Kwa wafanyabiashara </strong>Hupitia changamoto ya kukosa
-            Viewers wengi halisi kwenye matangazo yako hivyo hutumia Dubu kupata
-            watu wengi zaid kweny contacts zake na kuongeza viewers wengi zaidi
-            na wateja kwenye biashara yake.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Namna gani Dubu hufanya kazi! </Accordion.Header>
-          <Accordion.Body>
-            Dubu huanza kwa members kuifadhi(save) number zao (members) kwenye Buckets
-            kisha baada ya kujaa au kufika idadi pendekezwa ,Admin husambaza
-            link ya kudownload number hizo kwa watu wake,ambapo kila mmoja
-            aliejaza number ndani ya bucket anatakiwa kudownload hio bucket
-            kisha kufungua na kusave.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>Usalama ndani ya Dubu</Accordion.Header>
-          <Accordion.Body>
-            Dubu inahakikisha kuna usalama katika kuhifadhi na kushare contacts
-            kwa kufuata sheria na kanuni za usalama wa data
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-
-      </div>
-      
- </div>
  {/* <Explore /> */}
     </>
   );

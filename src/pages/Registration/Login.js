@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar'
 const Login = () => {
   return (
 <>
-<Navbar linkico="/Landing" />
+<Navbar linkico="/" />
 
     <div className="container8">
       <div className="card4">

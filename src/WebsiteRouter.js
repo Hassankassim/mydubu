@@ -30,9 +30,9 @@ const WebsiteRouter = () => {
       <Routes>
         
         <Route path="/Learnmore" element={<Learnmore />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/landing" element={<Home />} />
         <Route path="/download" element={<Download />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/Registration" element={<Registration />} />
         <Route path="/Bucket" element={<Bucket />} />
         <Route path="/Login" element={<Login />} />
