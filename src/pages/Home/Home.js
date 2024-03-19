@@ -1,7 +1,7 @@
 import React from "react";
 import backendAPI from "../../api/backendAPI";
 import "../../components/UI/button/button.css";
-import Navbar from '../../components/Navbar'
+
 
 function Home() {
 
@@ -34,7 +34,7 @@ function Home() {
 
   return (
     <>
-    <Navbar linkico="/" />
+   
       <div className="navcomp">
         {/* Main content */}
         <div className="container mt-5">
